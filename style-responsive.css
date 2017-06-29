@@ -16,3 +16,11 @@ body .builder-module-content .it-from-blog-extension:nth-child(2n+1) {
 body .builder-module-content .it-from-blog-extension:nth-last-child(-n+2) {
 	margin-bottom: 0;
 }
+
+.home-bullets {
+	width: 100%;
+}
+
+.wp-image-645, .wp-image-646 {
+	float: none !important;
+}

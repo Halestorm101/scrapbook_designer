@@ -1953,6 +1953,7 @@ table, td, th {
 	margin: 0 0 30px 0;
 	overflow: hidden;
 	height: auto;
+	width: 70%;
 }
 
 .home-bullets img {

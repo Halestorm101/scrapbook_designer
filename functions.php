@@ -172,3 +172,12 @@ function it_parker_add_logo_to_nav( $fields ) {
 add_action( 'builder_module_render_element_block_contents_navigation', 'it_parker_add_logo_to_nav' );
 
 add_theme_support( 'builder-responsive', array('tablet-width' => '1160px', 'mobile-width' => '1160px' ) );
+
+// Remove p tags from images, scripts, and iframes.
+function remove_some_ptags( $content ) {
+  $content = preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+  $content = preg_replace('/<p>\s*(<script.*>*.<\/script>)\s*<\/p>/iU', '\1', $content);
+  $content = preg_replace('/<p>\s*(<iframe.*>*.<\/iframe>)\s*<\/p>/iU', '\1', $content);
+  return $content;
+}
+add_filter( 'the_content', 'remove_some_ptags' );

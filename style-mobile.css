@@ -179,3 +179,13 @@ body .builder-module-content .it-from-blog:nth-child(n):last-child {
     background: #ffffff;
     margin: 20px 0;
 }
+
+.home-bullets {
+	width: 100%;
+}
+
+.wp-image-645, .wp-image-646 {
+	float: none !important;
+	display: block;
+	margin: 0 auto;
+}
