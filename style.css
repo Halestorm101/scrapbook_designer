@@ -1955,6 +1955,10 @@ table, td, th {
 	height: auto;
 }
 
+.home-bullets img {
+	margin: 5px;
+}
+
 #builder-module-58348816b8b69 ul li {
 	list-style: disc;
 	padding: 0;
